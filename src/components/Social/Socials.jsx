@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SocialDev = styled.div`
+const SocialDiv = styled.div`
   background-color: #d8cfbc;
   padding: 1.5rem 5%;
   margin: 1rem 1rem;
@@ -24,13 +24,13 @@ const ListItem = styled.li`
 
 function Socials() {
   return (
-    <SocialDev>
+    <SocialDiv>
       <List>
         <ListItem> Github </ListItem>
         <ListItem>Linkedin</ListItem>
         <ListItem>Instagram</ListItem>
       </List>
-    </SocialDev>
+    </SocialDiv>
   );
 }
 
