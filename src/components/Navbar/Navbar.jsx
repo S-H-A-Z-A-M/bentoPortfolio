@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 const Nav = styled.div`
   display: flex;
-  background-color: #d8cfbc;
+  background-color: #ede3d0;
   color: black;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem;
-  margin:1rem 1rem;
+  margin: 1rem 1rem;
   border-radius: 10px;
 `;
 
@@ -37,16 +37,16 @@ const ListItem = styled.li`
 
 function Navbar() {
   return (
-    <Nav>
-      <Logo>
-        <span>Gaurav </span>Gangde
-      </Logo>
-      <List>
-        <ListItem> Projects </ListItem>
-        <ListItem>About</ListItem>
-        <ListItem>Contact</ListItem>
-      </List>
-    </Nav>
+    <nav className="bg-[#ede3d0] flex justify-between items-center rounded-xl py-8 px-4  mx-2 my-2 uppercase">
+      <div className="text-3xl font-bold ">
+        <span className="font-normal italic">Gaurav </span>Gangde
+      </div>
+      <ul className="flex gap-20">
+        <li> Projects </li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
   );
 }
 

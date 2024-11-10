@@ -8,7 +8,11 @@ const Portrait = styled.img`
 `;
 
 function Profile() {
-  return <Portrait src="./images/portrait.webp " alt="profile"></Portrait>;
+  return (
+    <div className="">
+      <img className="rounded-xl w-1/5" src="./images/portrait.webp " alt="profile"></img>
+    </div>
+  );
 }
 
 export default Profile;

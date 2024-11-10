@@ -7,7 +7,7 @@ import ContactMe from "./components/Contact/ContactMe";
 function App() {
   return (
     <>
-      <ContactMe />
+      <Aboutme />
     </>
   );
 }

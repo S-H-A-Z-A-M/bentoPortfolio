@@ -1,36 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const SocialDiv = styled.div`
-  background-color: #d8cfbc;
-  padding: 1.5rem 5%;
-  margin: 1rem 1rem;
-  border-radius: 10px;
-  width: 550px;
-`;
-
-const List = styled.ul`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const ListItem = styled.li`
-  list-style-type: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  color: #000;
-`;
 
 function Socials() {
   return (
-    <SocialDiv>
-      <List>
-        <ListItem> Github </ListItem>
-        <ListItem>Linkedin</ListItem>
-        <ListItem>Instagram</ListItem>
-      </List>
-    </SocialDiv>
+    <div className="bg-[#ede3d0] rounded-xl py-8 px-8  mx-2 my-2 uppercase">
+      <ul className="flex gap-20">
+        <li> Github </li>
+        <li>Linkedin</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
   );
 }
 

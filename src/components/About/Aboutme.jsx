@@ -25,10 +25,12 @@ const Intro = styled.div`
 
 function Aboutme() {
   return (
-    <AboutDiv>
-      <Aimage src="./images/about_design.png"></Aimage>
-      <Intro>Turning ideas into code – welcome to my portfolio!</Intro>;
-    </AboutDiv>
+    <div className="bg-[#ede3d0] rounded-xl py-8 px-8  mx-2 my-2 flex flex-col">
+      <img className="w-20 self-end mb-16" src="./images/about_design.png"></img>
+      <p className="text-5xl font-semibold">
+        Turning ideas into code - welcome to my portfolio!
+      </p>  
+    </div>
   );
 }
 

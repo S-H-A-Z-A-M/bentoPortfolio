@@ -2,43 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { GoArrowUpRight } from "react-icons/go";
 
-const ConatctDiv = styled.div`
-  background-color: #565449;
-  padding: 1.5rem;
-  margin: 1rem 1rem;
-  border-radius: 10px;
-  color: #aaa;
-//   width: 450px;
-`;
-
-const Contactbar = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8rem;
-`;
-
-const BarItem = styled.li`
-  list-style-type: none;
-  //   font-size: 1.5rem;
-  width: 50px;
-`;
-
-const ContactP = styled.p`
-  font-size: 3rem;
-  font-weight: bolder;
-`;
-
 function ContactMe() {
   return (
-    <ConatctDiv>
-      <Contactbar>
-        <BarItem> Have some question? </BarItem>
-        <BarItem>
+    <div className="bg-[#57544A] rounded-lg p-2 mx-1 my-2 text-[#D8CFBC]	">
+      <ul className="flex justify-between items-center mb-24">
+        <li className="text-wrap w-24 font text-lg font-semibold">
+          {" "}
+          Have some question?{" "}
+        </li>
+        <li>
           <GoArrowUpRight style={{ fontSize: "3rem" }} />
-        </BarItem>
-      </Contactbar>
-      <ContactP>Contact Me</ContactP>
-    </ConatctDiv>
+        </li>
+      </ul>
+      <p className="text-5xl font-bold mb-3">Contact Me</p>
+    </div>
   );
 }
 
