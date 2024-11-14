@@ -3,19 +3,20 @@
 // import Socials from "./components/Social/Socials";
 // import Aboutme from "./components/About/Aboutme";
 // import ContactMe from "./components/Contact/ContactMe";
-import {
-  Aboutme,
-  ContactMe,
-  Navbar,
-  Profile,
-  Socials,
-  Skill
-} from "./components/data.js";
+// import {
+//   Aboutme,
+//   ContactMe,
+//   Navbar,
+//   Profile,
+//   Socials,
+//   Skill
+
+import Grid from "./components/Grid";
 
 function App() {
   return (
     <div>
-      <Skill />
+      <Grid />
     </div>
   );
 }
