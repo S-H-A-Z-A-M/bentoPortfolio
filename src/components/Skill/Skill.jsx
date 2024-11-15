@@ -12,9 +12,11 @@ function OneSkill({ name, icon }) {
   );
 }
 
-function Skill() {
+function Skill({ className }) {
   return (
-    <div className="bg-[#ede3d0]  rounded-xl py-8 pt-6 px-8  mx-2 my-2 uppercase text-left h-72 overflow-y-auto hide-scrollbar w-96 no-scrollbar">
+    <div
+      className={`bg-[#ede3d0]  rounded-xl py-8 pt-6 px-8 uppercase text-left overflow-y-auto hide-scrollbar no-scrollbar ${className}`}
+    >
       <OneSkill name="React" icon={<FaReact className="text-5xl" />} />
       <OneSkill name="HTML" icon={<FaHtml5 className="text-5xl" />} />
       <OneSkill name="CSS" icon={<FaCss3 className="text-5xl" />} />

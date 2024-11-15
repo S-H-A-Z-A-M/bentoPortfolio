@@ -23,13 +23,18 @@ const Intro = styled.div`
   padding: 1rem 3.5rem 1rem 0.5rem;
 `;
 
-function Aboutme() {
+function Aboutme({ className }) {
   return (
-    <div className="bg-[#ede3d0] rounded-xl py-8 px-8  mx-2 my-2 flex flex-col">
-      <img className="w-20 self-end mb-16" src="./images/about_design.png"></img>
+    <div
+      className={`bg-[#ede3d0] rounded-xl py-8 px-8 flex flex-col ${className}`}
+    >
+      <img
+        className="w-20 self-end mb-16"
+        src="./images/about_design.png"
+      ></img>
       <p className="text-5xl font-semibold">
         Turning ideas into code - welcome to my portfolio!
-      </p>  
+      </p>
     </div>
   );
 }

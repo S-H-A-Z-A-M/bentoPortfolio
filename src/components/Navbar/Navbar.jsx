@@ -35,9 +35,11 @@ const ListItem = styled.li`
   color: #333;
 `;
 
-function Navbar() {
+function Navbar({ className }) {
   return (
-    <nav className="bg-[#ede3d0] flex justify-between items-center rounded-xl py-8 px-4  mx-2 my-2 uppercase">
+    <nav
+      className={`bg-[#ede3d0] flex justify-between items-center rounded-xl py-8 px-4 uppercase ${className}`}
+    >
       <div className="text-3xl font-bold ">
         <span className="font-normal italic">Gaurav </span>Gangde
       </div>
